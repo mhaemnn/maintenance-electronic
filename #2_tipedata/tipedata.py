@@ -13,7 +13,7 @@ data_bool = True
 print('data = ', data_bool, 'bertipe = ', type(data_bool))
 
 
-# TIPE DATA KHUSUScd
+# TIPE DATA KHUSUS
 
 # bilangan kompleks
 data_complex = complex(5, 10)
