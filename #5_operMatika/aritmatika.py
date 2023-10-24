@@ -19,7 +19,7 @@ print(a, '*', b, '=', hasil)
 hasil = a / b
 print(a, '/', b, '=', hasil)
 
-# operasi ekspnen (pangkat)
+# operasi eksponen (pangkat)
 hasil = a ** b
 print(a, '**', b, '=', hasil)
 
