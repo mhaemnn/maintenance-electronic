@@ -1,12 +1,19 @@
-# Belajar Latihan logika dan komparasi
-user = float(input(
-    "MASUKAN ANGKA YANG BERNILAI \n kurang dari 3 \n atua \n lebih dari 10 \n :"))
+# Belajar latihan logika dan komparasi
 
+user = float(
+    input("Masukan angka yang bernilai \n dari 3 \n atau \n lebih dari 10 \n"))
+
+# Memeriksa angka kurang dari 3
+# ++++3-------------
 kurang = (user < 3)
 print("kurang dari 3: ", kurang)
 
-lebihDari = (user > 10)
-print("lebih darii 10:", lebihDari)
+# Memeriksa angka lebih dari 10
+# --------10++++++
+lebih = (user < 10)
+print("lebih dari 10: ", lebih)
 
-iscorect = kurang or lebihDari
-print("angka yang ada masukan: ", iscorect)
+
+# Menggabungkan
+hasil = kurang or lebih
+print("angka yang anda masukan: ", hasil)
