@@ -2,7 +2,7 @@
 # merubah semua ke uppercase, lowercase  dan menggunakan is
 
 # contoh 1
-kalimat = "Aku sukaAA BangizZZ keeKKamuiszzSSS"
+kalimat = "Aku sukaAA BangizZZ keeKKamszzSSS"
 print('normal: ' + kalimat)
 
 kalimat = kalimat.upper()
@@ -16,3 +16,20 @@ cek = kalimat.isupper()  # hasilnya boolean
 print(kalimat + 'is upper: ' + str(cek))
 cek = kalimat.islower()  # hasilnya boolean
 print(kalimat + 'is lower: ' + str(cek))
+
+
+# contoh 3
+cek = kalimat.isalpha()
+print(kalimat + 'is alpha: ' + str(cek))
+
+cek = kalimat.isalnum()
+print(kalimat + 'is alnum: ' + str(cek))
+
+cek = kalimat.isdecimal()
+print(kalimat + 'is decimal: ' + str(cek))
+
+cek = kalimat.isspace()
+print(kalimat + 'is space: ' + str(cek))
+
+cek = kalimat.istitle()
+print(kalimat + 'is title: ' + str(cek))
