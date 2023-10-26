@@ -1,12 +1,18 @@
-# Belajar operator manipulasi string
-# merubah semua ke uppercase dan lowercase
-salam = "hello"
-print('normal', salam)
+# Belajar operator manipulasi string (operator dalam method)
+# merubah semua ke uppercase, lowercase  dan menggunakan is
 
-salam = salam.upper()
-print('upper: ', salam)
+# contoh 1
+kalimat = "Aku sukaAA BangizZZ keeKKamuiszzSSS"
+print('normal: ' + kalimat)
 
-salam = salam.lower()
-print('lower: ', salam)
+kalimat = kalimat.upper()
+print('uper  : ' + kalimat)
+kalimat = kalimat.lower()
+print('lower : ' + kalimat)
 
-print('\n', 40 * '=', '\n')
+
+# contoh 2 (is)
+cek = kalimat.isupper()  # hasilnya boolean
+print(kalimat + 'is upper: ' + str(cek))
+cek = kalimat.islower()  # hasilnya boolean
+print(kalimat + 'is lower: ' + str(cek))
