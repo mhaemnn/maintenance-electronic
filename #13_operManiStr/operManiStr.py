@@ -33,3 +33,19 @@ print(kalimat + 'is space: ' + str(cek))
 
 cek = kalimat.istitle()
 print(kalimat + 'is title: ' + str(cek))
+
+# startswith dan endswith
+start = "Python The Bast".startswith("Python")
+print('start: ', str(start))
+
+end = "Python The Bast".endswith("Bast")
+print('end  : ', str(end))
+
+# join & split
+speack = ['I', 'Love', 'You']
+combined = ' '.join(speack)
+print(combined)
+
+
+combined = "I Love You"
+print(combined.split(' '))
