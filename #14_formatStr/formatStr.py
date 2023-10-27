@@ -26,4 +26,9 @@ print(format_str)
 
 # bilangan decimal
 angka = 20054.32445
-format_str = f"angka: {angka: }"
+format_str = f"angka: {angka: 010.37}"
+print(format_str)
+
+persentase = 0.034
+format_persen = f"persen: {persentase: %}"
+print(format_persen)
