@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/login.css' %}"
+    />
+  </head>
+  <body>
+    <div id="kotak">
+      <!-- untuk menangkap message -->
+      {% if messages %}
+      <div id="pesan" class="messages">
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <br />
+      <div id="atas">PT. Fratama Kencana Gemilang</div>
+      <div id="bawah">
+        <form method="post" action="{% url 'login' %}">
+          {% csrf_token %}
+          <input
+            class="masuk"
+            type="email"
+            autocomplete="off"
+            placeholder="Email .."
+            name="email"
+            required
+          /><br />
+          <input
+            class="masuk"
+            type="password"
+            autocomplete="off"
+            placeholder="Password .."
+            name="password"
+            required
+          /><br />
+          <input id="tombol" type="submit" value="Login" name="login" />
+          <i>
+            <p>
+              Not registered yet?
+              <a href="{% url 'register' %}">Register Here</a>
+            </p>
+          </i>
+        </form>
+      </div>
+    </div>
+    <script src="{% static 'js/login.js' %}" defer></script>
+  </body>
+</html>

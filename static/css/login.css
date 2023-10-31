@@ -1,0 +1,99 @@
+body {
+  background: #fff;
+  font-family: sans-serif;
+}
+
+#kotak {
+  width: 520px;
+  height: auto;
+  margin: 150px auto 100px auto;
+  color: #075e84;
+  transition: margin 0.3s ease;
+}
+
+#register:checked ~ #kotak {
+  margin-top: 50px;
+}
+
+#atas {
+  text-shadow: 2px 2px 2px white;
+  height: 35px;
+  width: 520px;
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+#bawah {
+  height: 200px;
+  width: 520px;
+}
+
+#bawah p {
+  width: 400px;
+  height: 40px;
+  margin-top: 8px;
+  margin-left: 60px;
+  color: rgb(84, 82, 82);
+  font-size: 14px;
+}
+
+#bawah p a {
+  text-decoration: none;
+  color: #075e84;
+}
+
+.masuk {
+  width: 385px; /* Sesuaikan lebar dengan yang diinginkan */
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 12pt;
+  border: 1px solid #075e84;
+  padding-left: 10px;
+  color: #075e84;
+}
+
+.masuk:focus {
+  width: 385px !important;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 12pt;
+  padding-left: 10px;
+  color: #075e84;
+  outline: none;
+  box-shadow: 0 0 5px #075e84;
+}
+
+#tombol {
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 60px;
+  background: #075e84;
+  border: none;
+  color: #fff;
+  font-size: 14pt;
+  outline: none;
+  cursor: pointer !important;
+}
+
+/* message */
+#pesan {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #8cc3da;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 380px; /* Sesuaikan dengan lebar input */
+  text-align: center;
+}
+
+#pesan p {
+  margin: 0;
+}
